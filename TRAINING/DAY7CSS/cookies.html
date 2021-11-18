@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function storedata()
+            {
+                localStorage.username=document.getElementById("username").value;
+                
+            }
+            function getstorage()
+            {
+                if(localStorage.username)
+                {
+                    document.getElementById("span1").innerHTML=localStorage.username;
+                }
+            }
+        </script>
+
+    </head>
+    <body onload="getstorage()">
+        <input type="text" id="username" name="name" value=""/>
+        <input type="button" value="store data" name="submit" onclick="storedata()"/>
+        <span id="span1"></span>
+    </body>
+</html>

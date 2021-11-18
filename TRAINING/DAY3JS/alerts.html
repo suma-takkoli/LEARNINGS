@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+            // function myfunction()
+            // {
+            //     var a=document.login.user.value;
+            //     alert(a);
+            // }
+
+            // function myfunction(){
+            //     var r=window.confirm("submit")
+            //     if(r==true)
+            //     {
+            //         window.alert("hey")
+            //     }
+            //     else{
+            //         window.alert("false")
+            //     }
+            // }
+
+            //validations to user name
+            function myfunction()
+            {
+                var a=document.login.user.value;
+                var b=document.login.pwd.value
+                if(a.length==0 || a.length==null)
+                {
+                    alert("enter name")
+                    return false;
+                }
+                if(b.length==0 ||b.length==null)
+                {
+                    alert("enter passwprd")
+                    return false;
+                }
+                else{
+                    window.alert("hey")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="login">
+            Enter name: <input type="text" name="user"><br>
+            Enter Password: <input type="password" name="pwd">
+            <input type="button" value="submit" onclick="return myfunction()"> return my function depends on return value in js file
+        </form>
+    </body>
+</html>

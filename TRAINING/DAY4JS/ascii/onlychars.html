@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script language="javascript">
+            function isalpha(e)
+            {
+                var num=e.keyCode;  //convert a to ascii
+                var keychar=String.fromCharCode(num); //changing in to string
+                var check=/[a-z]/;        //checking for alphabet
+                return check.test(keychar)  //test is for checking whether keychar is ther in check
+            }
+        </script>
+    </head>
+    <body bgcolor="violet">
+        <center><input type="text" name="name" onkeypress="return isalpha(event)"></center>
+    </body>
+</html>

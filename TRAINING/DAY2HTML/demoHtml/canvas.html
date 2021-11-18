@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>CANVAS</head>
+    <body>
+        <canvas id="myCanvas" width="200" height="100" style="border:2px solid #FF00FF;">
+            <p>canvas is used to draw graphics using java script</p>
+            your browser does not support canvas tag
+        </canvas>
+        <script type="text/javascript" language="javascript">
+        var c=document.getElementById("myCanvas");
+        var a=c.getContext("2d");
+        a.fillStyle="#FF00FF";
+        a.fillRect(25,10,75,80);
+        a.beginPath();
+            a.arc(95, 50, 40, 0, 2 * Math.PI);
+            a.fillStyle="#FFFF00"
+            a.fill();
+        </script>
+        
+    </body>
+</html>

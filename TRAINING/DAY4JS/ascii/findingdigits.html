@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script language="javascript">
+            function myfun(e)
+            {
+                var num=e.keyCode;  //convert a to ascii
+                var keychar=String.fromCharCode(num); //changing in to string
+                var check=/\d/;       //checking for digit
+                return check.test(keychar)  //test is for checking whether keychar is ther in check
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" name="name" onkeypress="return myfun(event)"
+    </body>
+</html>

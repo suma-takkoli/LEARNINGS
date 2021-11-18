@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            function num(e)
+            {
+                var keynum;
+                if(window.event)
+                {
+                    keynum=e.keyCode; //read ascii of argument e and store in keynum
+                }
+                alert(keynum)
+            }
+        </script>
+    </head>
+    <body bgcolor="pink">
+        <input type="text" onkeypress="num(event)"/>
+    </body>
+</html>

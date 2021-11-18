@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function myfunction()
+            {
+                document.login.user.value="hey! iam in function";
+                setTimeOut("myfun1()",200)
+            }
+            function mufun1()
+            {
+                document.login.user.value="hey! function2 is called";
+                //document.forrmname.attribute name.value
+            }
+
+        </script>
+    </head>
+    <body>
+        <form name="login">
+            Enter name: <input type="text" name="user"><br>
+            Enter Password: <input type="password" name="pwd">
+            <input type="button" value="submit" onclick="myfunction()"> return my function depends on return value in js file
+        </form>
+    </body>
+</html>

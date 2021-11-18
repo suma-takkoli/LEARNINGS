@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script>
+            if(sessionStorage.pagecnt)
+            {
+                sessionStorage.pagecnt=Number(sessionStorage.pagecnt)+1;
+            }
+            else
+            {
+                sessionStorage.pagecnt=1;
+            }
+            document.write("visits"+sessionStorage.pagecnt+"time(s) this session");
+        </script>
+    </head>
+</html>

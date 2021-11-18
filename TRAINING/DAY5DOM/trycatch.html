@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            var txt;
+            function testerror()
+            {
+                try
+                {
+                    window.alert("hiii----welcome!!!");
+                    window.confirm("continue")
+                    addlert("hii") //error
+                }
+                catch(error)
+                {
+                    txt="there was an error in this page\n"
+                    txt+=error;
+                    txt+="click ok to continue"
+                    // alert(text)
+                    if(!confirm(txt))
+                    {
+                        document.location.href="https://www.wipro.com"
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2> example on try and catch blocks</h2>
+        <input type="text" name="enter value">
+        <input type="button" value="submit" onclick="testerror()">
+    </body>
+</html>

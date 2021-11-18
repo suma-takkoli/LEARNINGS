@@ -1,0 +1,21 @@
+body{
+    background-color: cadetblue;
+}
+h2{
+    color:darkolivegreen;
+}
+p{
+    text-align: center;
+    font-size: larger;
+}
+#paragraph{
+    font-family:cursive;
+    color:black;
+    text-align:right; 
+    background-color: olive; 
+}
+.expense{
+    color:limegreen;
+    background-color: blueviolet;
+    font-size: large;
+}
